@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan a QR Code</title>
+</head>
+<body>
+
+    <div id="reader" style="width:500px; height: 500px;"></div>
+
+    <script src="html5-qrcode.min.js"></script>
+
+    <script>
+
+function onScanSuccess(decodedText, decodedResult) {
+    // Handle on success condition with the decoded text or result.
+    console.log(`Scan result: ${decodedText}`, decodedResult);
+}
+
+var html5QrcodeScanner = new Html5QrcodeScanner(
+	"reader", { fps: 10, qrbox: 300 }
+);
+html5QrcodeScanner.render(onScanSuccess);
+
+    </script>
+    
+
+
+</body>
+</html>
