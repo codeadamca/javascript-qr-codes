@@ -6,9 +6,9 @@ A basic example of using the HTML5 QRCode library, HTML5 and JavaScript to scan 
 
 ## Project Stack
 
-This project uses vanilla [PHP](https://php.net).
+This project uses vanilla [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [HTML](https://www.w3.org/html/).
 
-<img src="https://console.codeadam.ca/api/image/php" width="60"> 
+<img src="https://console.codeadam.ca/api/image/javascript" width="60"> <img src="https://console.codeadam.ca/api/image/html" width="60"> 
 
 ---
 
