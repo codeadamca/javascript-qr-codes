@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Scanner Demo</title>
+</head>
+<body>
+        
+        <video id="qr-video"></video>
+
+    <script type="module">
+
+    import QrScanner from "/qr-scanner.min.js";
+
+    const video = document.getElementById('qr-video');
+
+    function setResult(result) {
+        console.log(result.data);
+        scanner.stop();
+    }
+
+    const scanner = new QrScanner(video, result => setResult(result), {
+        onDecodeError: error => {
+            // camQrResult.textContent = error;
+            // camQrResult.style.color = 'inherit';
+        },
+        highlightScanRegion: true,
+        highlightCodeOutline: true,
+    });
+
+    scanner.start().then(() => {
+        
+    });
+
+    </script>
+
+</body>
+</html>

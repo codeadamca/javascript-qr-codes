@@ -15,6 +15,7 @@ This project uses vanilla [JavaScript](https://developer.mozilla.org/en-US/docs/
 ## Repo Resources
 
 - [HTML5 QRCode](https://github.com/mebjas/html5-qrcode/)
+- [QR-Scanner](https://github.com/nimiq/qr-scanner)
 
 <br>
 <a href="https://codeadam.ca">
